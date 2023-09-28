@@ -32,9 +32,9 @@
         var options = {
             env: 'AutodeskProduction',
             api: 'derivativeV2', // TODO: for models uploaded to EMEA change this option to 'derivativeV2_EU'
-            getAccessToken: getForgeToken
+           AccessToken: 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjY0RE9XMnJoOE9tbjNpdk1NU0xlNGQ2VHEwUSIsInBpLmF0bSI6Ijd6M2gifQ.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiYnVja2V0OmNyZWF0ZSIsImJ1Y2tldDpyZWFkIl0sImNsaWVudF9pZCI6ImFiNkFDNmxldlBJblBRUmRVcTV1bHE5R2tjb080TDVEIiwiYXVkIjoiaHR0cHM6Ly9hdXRvZGVzay5jb20vYXVkL2Fqd3RleHA2MCIsImp0aSI6IkZ3WnBLMkxpb0h4WUJ2S05IZE9SQldVdG53VGZEeG9EVVoyUUtwY2pjRXpua3NnVFoxSkI0ZHZaRUxkY3lKMmQiLCJleHAiOjE2OTU4ODgwMDl9.lRdBNJcrY_fUWlgAQAEc3Jf8WDzmsb1JCfG6Qu58tlL9JnlWH_51ZItsUsbdwODMvKnqIeV44NSYl0AlBdYH-zOjd0AByNSN_d7-7HzFbsPfnpiwFP_IFN-Dl_sAaFUi6QpWTcY6HhcylILaHElDJmjISAfU0sSSh6DPKK4YfIF-GNo57OUzVdC-WvPbW9roCjcRutDX3z0W3T3KSc44partC49G_-iNtPTm7HsTSayIhuBw06MH28k2SW74E1TojxRTxZZD52TU_O1qcNl22Bu-S5ZMo2t8IhIEdNTaveqCSQxOdAbV8sSHFCpcCE53gP3HtsIOP_2g7tzVKNEL6Q'
         };
-        var documentId = 'urn:' + getUrlParameter('urn');
+        var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6cGVyc2lzdGVudC1idWNrZXQtMTExL2FnZ3JlZ2F0ZS0xLnJ2dA' + getUrlParameter('urn');
 
         // Run this when the page is loaded
         Autodesk.Viewing.Initializer(options, function onInitialized(){
